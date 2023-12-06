@@ -73,7 +73,7 @@ footer {
 
 
 .typo {
-    background-color: lightgrey;
+    background-color: rgb(238, 238, 238);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,10 +82,13 @@ footer {
 }
 
 .title {
-    background-color: aqua;
     text-align: center;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     font-size: xx-large;
+    font-family: "merel", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .typo .image-grid {
@@ -95,16 +98,50 @@ footer {
     gap: 10px;
 }
 
+.typo .image-box {
+    position: relative;
+}
+
+.typo .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    background-color: rgba(0,0,0);
+    text-align: center;
+    height: 400px;
+    width: 400px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-text h1 {
+    color: white;
+    font-size: xx-large;
+    font-family: "merel", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 50px;
+}
+
+.image-text p {
+    color: white;
+    font-size: small;
+    padding: 30px;
+}
+
 .typo img {
     width: 400px;
     height: 400px;
     padding: 10px;
 }
 
-img:hover {
+/* img:hover {
     cursor: pointer;
     opacity: 80%;
     transition: 0.5s;
+} */
+
+.typo .image-box:hover .image-text {
+    opacity: 1;
 }
-
-
