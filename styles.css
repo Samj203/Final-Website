@@ -5,7 +5,7 @@ html{
 body {
     font-family: Arial, sans-serif;
     margin: auto;
-    background-color: #121212;
+    background-color: #696969;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -13,10 +13,13 @@ body {
 
 main {
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     display: flex;
+    flex-wrap: wrap;
     background: linear-gradient(#1f2c46, #182135);
     padding: 15px;
     padding-top: 5px;
@@ -38,6 +41,8 @@ nav {
 }
 
 nav a {
+    display: flex;
+    flex-wrap: wrap;
     text-decoration: none;
     padding: 10px 20px;
     margin: 0 10px;
@@ -163,4 +168,63 @@ footer {
 
 .typo .image-box:hover .image-text {
     opacity: 1;
+}
+
+.coding {
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 40px;
+    gap: 30px;
+    color: white;
+}
+
+.worksheet-grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+
+.worksheet-obj {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.worksheet-obj img {
+    object-fit: contain;
+    max-width: 100%;
+    min-width: 0;
+    width: 400px;
+    height: 400px;
+}
+
+.worksheet-obj p {
+    text-align: justify;
+    max-width: 400px;
+}
+
+button {
+    background-color: #9171f8;
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+    background-color: #9171f89f;
+    border-radius: 100px;
+    font-size: medium;
 }
