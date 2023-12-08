@@ -5,16 +5,25 @@ html{
 body {
     font-family: Arial, sans-serif;
     margin: auto;
-    background-color: #696969;
+    background-color: #f0f0f0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 main {
-    color: white;
+    color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+
+p {
+    font-family: "poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 header {
@@ -29,7 +38,7 @@ header {
     justify-content: space-between;
     color: #ffffff;
     min-height: 100px;
-    box-shadow: 0 -6px 10px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 -6px 10px 20px rgba(0,0,0,0.2);
     
 }
 
@@ -80,7 +89,8 @@ h5 {
 }
 
 footer {
-    background-color: whitesmoke;
+    background-color: #1f2c46;
+    color: antiquewhite;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,6 +101,9 @@ footer {
     min-height: 40px;
 }
 
+footer p {
+    color: whitesmoke;
+}
 
 .typo {
     background-color: rgb(238, 238, 238);
@@ -99,6 +112,7 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     padding: 10px;
+    box-shadow: 0 -6px 50px 20px rgba(0,0,0,1);
 }
 
 .title {
@@ -113,12 +127,7 @@ footer {
 
 .title p{
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
-    font-weight: 500;
-    font-style: normal;
-    margin-left: 20%;
-    margin-right: 20%;
 }
 
 .typo .image-grid {
@@ -158,6 +167,11 @@ footer {
     color: white;
     font-size: small;
     padding: 30px;
+    font-family: "poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .typo img {
@@ -204,11 +218,22 @@ footer {
     min-width: 0;
     width: 400px;
     height: 400px;
+    opacity: 0.9;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+}
+
+.worksheet-obj img:hover {
+    transform: scale(1.05);
+    opacity: 75%;
 }
 
 .worksheet-obj p {
     text-align: justify;
     max-width: 400px;
+    font-family: "poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
 
 button {
@@ -221,10 +246,34 @@ button {
     padding: 10px;
     border: none;
     transition: all 0.5s ease-in-out;
+    font-family: "merel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 button:hover {
     background-color: #9171f89f;
     border-radius: 100px;
     font-size: medium;
+}
+
+
+
+
+/* CSS for Reflection Essay Section */
+
+.reflect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    background: #121212;
+    color: white;
+    text-align: center;
+    text-align: justify;
+}
+
+.reflect h1{
+    margin-top: 40px;
 }
