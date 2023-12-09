@@ -29,17 +29,24 @@ p {
 header {
     display: flex;
     flex-wrap: wrap;
-    background: linear-gradient(#1f2c46, #182135);
+    background: linear-gradient(#ffffff, #ffffff);
     padding: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 25px;
     align-items: center;
     justify-content: space-between;
-    color: #ffffff;
+    color: #000000;
     min-height: 100px;
     box-shadow: 0 -6px 10px 20px rgba(0,0,0,0.2);
     
+}
+
+header h1 {
+    color: #9171f8;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 nav {
@@ -47,6 +54,9 @@ nav {
     justify-content: center;
     padding: 10px;
     border-radius: 5px;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 nav a {
@@ -55,7 +65,7 @@ nav a {
     text-decoration: none;
     padding: 10px;
     margin: 0 10px;
-    color: #ffffff;
+    color: #000000;
     border-radius: 5px;
     transition: all 1s ease-in-out;
 }
@@ -63,6 +73,7 @@ nav a {
 nav a:hover {
     background-color: #9171f8;
     border-radius: 25px;
+    color: white;
     font-size: larger;
 }
 
@@ -111,6 +122,8 @@ footer p {
     flex-wrap: wrap;
     padding: 10px;
     box-shadow: 0 -6px 50px 20px rgba(0,0,0,1);
+    padding-bottom: 30px;
+    padding-top: 20px;
 }
 
 .title {
@@ -256,23 +269,120 @@ button:hover {
     font-size: medium;
 }
 
-
-
-
 /* CSS for Reflection Essay Section */
-
 .reflect {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    background: #121212;
-    color: white;
+    background: #ffffff;
+    color: black;
     text-align: center;
     text-align: justify;
 }
 
 .reflect h1{
     margin-top: 40px;
+}
+
+/* CSS for Carp Section */
+.carp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 10px;
+    background: #121212;
+    color: #ffffff;
+}
+
+.poster-grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.poster-obj p {
+    text-align: justify;
+    max-width: 400px;
+    font-family: "poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poster-obj {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster-obj img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 0;
+    min-height: 0;
+    width: 400px;
+    transition: all 1s ease-in-out;
+}
+
+.poster-obj img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 -6px 60px 10px rgb(0, 0, 0, 1);
+}
+
+.carp{
+    background: #121212;
+}
+
+.finalposter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    background: #121212;
+}
+
+.finalposter img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 400px;
+    min-height: 0;
+    width: 600px;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.finalposter p{
+    max-width: 400px;
+    margin: 0;
+    padding: 20px;
+    padding-top: 0px;
+    color: #ffffff;
+    text-align: justify;
+}
+
+.carp .title{
+    padding: 0px;
+    padding-top: 5px;
+}
+
+.carp .title h1 {
+    color: white;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: xx-large;
 }
