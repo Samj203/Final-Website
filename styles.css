@@ -11,11 +11,35 @@ body {
     min-height: 100vh;
 }
 
-main {
+.intro {
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Images/background.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    min-height: 500px;
+}
+
+.intro p{
+    background-color: rgb(18, 18, 18, 0.5);
+    padding: 25px;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 20px 20px 10px rgba(0,0,0,0.2);
+    font-size: large;
+}
+
+.intro h1{
+    font-size: xx-large;
+    margin: 0;
+    color: #000000;
+    margin-top: 20px;
 }
 
 p {
