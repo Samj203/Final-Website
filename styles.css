@@ -171,7 +171,7 @@ footer p {
     font-family: "merel", sans-serif;
     font-weight: 700;
     font-style: normal;
-    padding-top: 50px;
+    padding-top: 0px;
 }
 
 .image-text p {
@@ -246,6 +246,7 @@ footer p {
     font-family: "poppins", sans-serif;
     font-weight: 200;
     font-style: normal;
+    margin: 10px;
 }
 
 button {
@@ -301,10 +302,10 @@ button:hover {
 .poster-grid {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 80px;
 }
 
 .poster-obj p {
@@ -313,6 +314,8 @@ button:hover {
     font-family: "poppins", sans-serif;
     font-weight: 200;
     font-style: normal;
+    padding: 10px;
+    margin: 0;
 }
 
 .poster-obj {
