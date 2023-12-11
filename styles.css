@@ -1,3 +1,4 @@
+/* Main */
 html{
     scroll-behavior: smooth;
 }
@@ -11,6 +12,45 @@ body {
     min-height: 100vh;
 }
 
+p {
+    font-family: "poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+small {
+    font-size: small;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(#ffffff, #ffffff);
+    padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    align-items: center;
+    justify-content: space-between;
+    color: #000000;
+    min-height: 100px;
+    /* position: sticky; */
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 20px 20px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: #9171f8;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Intro */
 .intro {
     color: rgb(0, 0, 0);
     display: flex;
@@ -40,37 +80,6 @@ body {
     margin: 0;
     color: #000000;
     margin-top: 20px;
-}
-
-p {
-    font-family: "poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-header {
-    display: flex;
-    flex-wrap: wrap;
-    background: linear-gradient(#ffffff, #ffffff);
-    padding: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 25px;
-    align-items: center;
-    justify-content: space-between;
-    color: #000000;
-    min-height: 100px;
-    box-shadow: 0 -6px 10px 20px rgba(0,0,0,0.2);
-    
-}
-
-header h1 {
-    color: #9171f8;
-    font-family: "poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
 }
 
 nav {
@@ -145,7 +154,7 @@ footer p {
     align-items: center;
     flex-wrap: wrap;
     padding: 10px;
-    box-shadow: 0 -6px 50px 20px rgba(0,0,0,1);
+    box-shadow: 0px -6px 50px 20px rgba(0,0,0,1);
     padding-bottom: 30px;
     padding-top: 20px;
 }
@@ -233,9 +242,10 @@ footer p {
 .worksheet-grid {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
+    align-items: flex-start;
+    flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
 }
 
 .worksheet-obj {
@@ -292,23 +302,6 @@ button:hover {
     background-color: #9171f89f;
     border-radius: 100px;
     font-size: medium;
-}
-
-/* CSS for Reflection Essay Section */
-.reflect {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    background: #ffffff;
-    color: black;
-    text-align: center;
-    text-align: justify;
-}
-
-.reflect h1{
-    margin-top: 40px;
 }
 
 /* CSS for Carp Section */
@@ -412,4 +405,26 @@ button:hover {
     margin-bottom: 0;
     text-align: center;
     font-size: xx-large;
+}
+
+/* CSS for Reflection Essay Section */
+.reflect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    background: #ffffff;
+    color: black;
+    text-align: center;
+    text-align: justify;
+}
+
+.reflect h1{
+    margin-top: 40px;
+}
+
+.reflect p{
+    margin-left: 15%;
+    margin-right: 15%;
 }
